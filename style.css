@@ -1,0 +1,150 @@
+/*------------ Navbar ----------------*/
+nav h1{
+	font-size: 1.5rem;
+}
+nav .img-fluid{
+	width: 10%;
+	flex-basis: 90px;
+}
+nav img{
+	width: 100%;
+	border-radius: 50%;
+}
+.bold-p{
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+.nav-left, .nav-right{
+	width: 50%;
+}
+@media(max-width: 840px){
+	nav{
+		flex-direction: column !important;
+		text-align: center;
+	}
+	nav .img-fluid{
+		width: 20%;
+		text-align: center !important;
+	}
+	nav img{
+		width: 80%;
+		margin-bottom: 0.5rem;
+	}
+	.nav-left{
+		flex-direction: column !important;
+		justify-content: center;
+	}
+	.nav-left, .nav-right{
+		width: 100%;
+	}
+	.nav-right.text-end{
+		text-align: center !important;
+	}
+
+	/*----- help-home -----*/
+	#help-home{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	footer .help-home{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media(max-width: 610px){
+	nav .img-fluid{
+		width: 30%;
+		text-align: center !important;
+	}
+	nav img{
+		width: 80%;
+	}
+}
+@media(max-width: 440px){
+	nav h1{
+		font-size: 1.2rem;
+	}
+	.bold-p{
+		font-weight: 500;
+		font-size: 0.8rem;
+	}
+	nav .img-fluid{
+		width: 45%;
+		text-align: center !important;
+	}
+	nav img{
+		width: 70%;
+	}
+
+	#welcome h2{
+		font-size: 1.1rem;
+	}
+	p{
+		font-size: 0.9rem;
+	}
+
+	#privacy span{
+		font-family: 2rem;	
+	}
+
+	footer .help-home a{
+		font-size: 0.8em;
+	}
+}
+
+/*--------------- help-home ------------*/
+#help-home{
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.help-home a{
+	text-decoration: none;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 10px gray;
+	color: black;
+	padding: 0.5rem;
+	font-weight: 500;
+	border-radius: 5px;
+}
+/*------------main------------*/
+#welcome .col-12{
+	width: 70%;
+	margin: auto;
+}
+@media(max-width: 992px){
+	#welcome .col-12{
+		width: 90%;
+	}
+}
+@media(max-width: 768px){
+	#welcome .col-12{
+		width: 100%;
+	}
+}
+
+/*---- privacy section -----*/
+#privacy span{
+	font-family: 3rem;
+	font-weight: bolder;
+}
+
+/*------------ footer --------*/
+footer .help-home{
+	display: flex;
+	justify-content: center;
+}
+footer .help-home a{
+	margin-left: 0.5rem;
+	display: inline-block;
+}
+footer img{
+	width: 10%;
+}
+@media(max-width: 840px){
+	footer img{
+		width: 35%;
+		margin-bottom: 0.5rem;
+	}
+}
