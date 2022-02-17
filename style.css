@@ -1,6 +1,9 @@
 body{
 	font-family: Arial, Raleway, sans-serif !important;
 }
+.bg-primary{
+	background-color: #337ab7ff !important;
+}
 /*------------ Navbar ----------------*/
 nav h1{
 	font-size: 1.5rem;
@@ -79,9 +82,6 @@ nav img{
 	nav img{
 		width: 70%;
 	}
-	#welcome h2{
-		font-size: 1.1rem;
-	}
 	p{
 		font-size: 0.9rem;
 	}
@@ -111,6 +111,9 @@ nav img{
 	border-radius: 5px;
 }
 /*------------main------------*/
+#welcome h2{
+		font-size: 3rem;
+	}
 #welcome .col-12{
 	width: 70%;
 	margin: auto;
@@ -130,6 +133,15 @@ nav img{
 @media(max-width: 768px){
 	#welcome .col-12{
 		width: 100%;
+	}
+}
+@media(max-width: 440px){
+
+	#welcome h2{
+		font-size: 2.3rem;
+	}
+	#welcome h3{
+		3font-size: 1.2rem;
 	}
 }
 
